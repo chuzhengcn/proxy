@@ -1,0 +1,8 @@
+{
+    "name": "feiyesoft-http-proxy",
+    "description": "proxy",
+    "version": "0.0.1",
+    "dependencies": {
+        "http-proxy" : "*"
+    }
+}
