@@ -1,13 +1,14 @@
-var httpProxy = require('http-proxy')
+var httpProxy = require('http-proxy');
 
 var proxy = httpProxy.createProxy();
 
 var options = {  
-  'www.feiyesoft.com': 'http://127.0.0.1:9000'
+    'www.feiyesoft.com': 'http://127.0.0.1:5000',
+    'cs.feiyesoft.com' : 'http://127.0.0.1:5001',
 }
 
 proxy.on('error', function(error) {
-    console.log(err)
+    console.error(err)
 })
 
 require('http').createServer(function(req, res) {  
