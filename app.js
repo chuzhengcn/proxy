@@ -8,7 +8,7 @@ var options = {
 }
 
 proxy.on('error', function(error) {
-    console.error(err)
+    console.error(error.message)
 })
 
 require('http').createServer(function(req, res) {  
