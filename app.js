@@ -5,6 +5,8 @@ var proxy = httpProxy.createProxy();
 var options = {  
     'www.feiyesoft.com': 'http://127.0.0.1:5000',
     'cs.feiyesoft.com' : 'http://127.0.0.1:5001',
+    'ec.feiyesoft.com' : 'http://127.0.0.1:5002',
+    'app01.feiyesoft.com' : 'htpp://127.0.0.1:5003',
 }
 
 proxy.on('error', function(error) {
